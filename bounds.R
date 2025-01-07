@@ -277,7 +277,7 @@ spm_lw_bound_disc_Arends_est <- function(A, B) {
 }
 
 ######################################################################
-# BOUNDS IN (5)
+# BOUNDS IN (...)
 # Based on Mesfioui, M., Trufin, J., and Zuyderhoff, P. (2022). Bounds
 # on Spearman's rho when at least one random variable is discrete.
 # European Actuarial Journal, 12, 321-348.
