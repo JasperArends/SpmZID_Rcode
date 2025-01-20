@@ -156,7 +156,9 @@ spm_Arends <- function(A, B) {
 # Based on Safari-Katesari, H., Samadi, S.Y. and Zaroudi, S. (2020).
 # Modelling count data via copulas. Statistics, 54(6), 1329-1355.
 # doi.org/10.1080/02331888.2020.1867140.
-# Implementation by ...
+# Implementation by de Greef, N., van den Heuvel, E. and Zhuozhao, Z.
+# (2020). Correlation estimation for bivariate zero-inflated discrete
+# data. Master's thesis, Eindhoven University of Technology
 ######################################################################
 calculate_Safari_rho_Spearman <- function(lambda1, lambda2, pi1, pi2, cop_par, copula){
   y1 <- 0
