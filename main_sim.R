@@ -15,7 +15,7 @@ corr_bzip_main <- function(lambda1, lambda2, pi1, pi2, cop_par, N, sim, copula) 
   # Perform Monte-Carlo simulations
   for (nx in 1:sim) {
     # Generate sample
-    X <- gen_pois(lambda1, lambda2, pi1, pi2, cop_par, copula)
+    X <- gen_pois(lambda1, lambda2, pi1, pi2, cop_par, copula, N)
     
     # Make estimates
     df_sim[nx,] <- c(nx,
