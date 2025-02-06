@@ -2,8 +2,8 @@
 # BOUNDS ON SPEARMAN'S RHO
 # for zero-inflated data
 ######################################################################
-source("Estimator_functions.R")
-source("Copulas.R")
+source("main_estimators.R")
+source("copulas.R")
 
 ######################################################################
 # ZERO-INFLATED CONTINUOUS DISTRIBUTIONS
@@ -35,7 +35,7 @@ spm_bounds_cont_Arends_est <- function(A, B) {
 }
 
 ######################################################################
-# APPROXIMATE BOUNDS FOR FULLY DISCRETE DATA in (...)
+# APPROXIMATE BOUNDS FOR FULLY DISCRETE DATA
 # Based on Arends, J.R.M. and Perrone, E. (n.d.). Spearman's rho for
 # zero inflated data.
 ######################################################################
@@ -277,7 +277,7 @@ spm_lw_bound_disc_Arends_est <- function(A, B) {
 }
 
 ######################################################################
-# BOUNDS IN (...)
+# ZERO-INFLATED CONTINUOUS DISTRIBUTIONS
 # Based on Mesfioui, M., Trufin, J., and Zuyderhoff, P. (2022). Bounds
 # on Spearman's rho when at least one random variable is discrete.
 # European Actuarial Journal, 12, 321-348.
