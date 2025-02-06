@@ -31,7 +31,7 @@ gen_pois <- function(lambda1, lambda2, pi1, pi2, cop_par, copula, N) {
   return(cbind(A, B))
 }
 
-# Frechet copula
+# Frechet copula (without inflation)
 gen_Frechet <- function(N, alpha) {
   # Copula C(u, v) = (1 - alpha) * Π(u, v) + alpha * M(u, v)
   U <- matrix(nrow=N, ncol=2) # Sample
