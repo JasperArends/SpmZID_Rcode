@@ -9,10 +9,10 @@
 library(dplyr)
 library(Metrics) # MSE
 
-source("Copulas.R")
-source("GenSample.R")
-source("Estimator_functions.R")
-source("bounds.R"
+source("copulas.R")
+source("gen_sample.R")
+source("main_estimators.R")
+source("bounds.R")
 
 
 ######################################################################
