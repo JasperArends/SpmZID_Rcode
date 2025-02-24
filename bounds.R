@@ -36,8 +36,8 @@ spm_bounds_cont_Arends_est <- function(A, B) {
 
 ######################################################################
 # APPROXIMATE BOUNDS FOR FULLY DISCRETE DATA
-# Based on Arends, J.R.M. and Perrone, E. (n.d.). Spearman's rho for
-# zero inflated data.
+# Based on Arends, J.R.M. and Perrone, E. (2025). Spearman's rho for
+# zero inflated data. In preparation.
 ######################################################################
 spm_bound_disc_Arends <- function(lambda1, lambda2, pi1, pi2) {
   return ( c(spm_up_bound_disc_Arends(lambda1, lambda2, pi1, pi2),
