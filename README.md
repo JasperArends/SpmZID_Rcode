@@ -11,10 +11,10 @@ Set of copulas that can be used for simulations.
 **Estimation_functions.R**
 Estimators for Spearman's rho adjusted to zero-inflated distributions.
 
-**GenSample.R**
+**gen_sample.R**
 Generates a sample of zero-inflated Poisson random variables for an arbitrary copula and zero-inflated exponential random variables.
 
-**Bounds.R**
+**bounds.R**
 Functions for the computation and estimatation of bounds on zero-inflated continuous and discrete random variables.
 
 **DEMO.R**
