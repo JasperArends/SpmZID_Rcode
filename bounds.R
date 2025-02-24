@@ -7,8 +7,8 @@ source("copulas.R")
 
 ######################################################################
 # ZERO-INFLATED CONTINUOUS DISTRIBUTIONS
-# Based on Arends, J.R.M. and Perrone, E. (n.d.). Spearman's rho for
-# zero inflated data.
+# Based on Arends, J.R.M. and Perrone, E. (2025). Spearman's rho for
+# zero inflated data. In preparation.
 ######################################################################
 
 # True value
