@@ -40,8 +40,8 @@ spm_Mesfioui <- function(A, B) {
 
 ######################################################################
 # ESTIMATOR rho_A
-# Based on Arends, J.R.M. and Perrone, E. (n.d.). Spearman's rho for
-# zero inflated data.
+# Based on Arends, J.R.M. and Perrone, E. (2025). Spearman's rho for
+# zero inflated data. In preparation.
 ######################################################################
 spm_Arends <- function(A, B) {
   
@@ -158,7 +158,7 @@ spm_Arends <- function(A, B) {
 # doi.org/10.1080/02331888.2020.1867140.
 # Implementation by de Greef, N., van den Heuvel, E. and Zhuozhao, Z.
 # (2020). Correlation estimation for bivariate zero-inflated discrete
-# data. Master's thesis, Eindhoven University of Technology
+# data. Master's thesis, Eindhoven University of Technology.
 ######################################################################
 calculate_Safari_rho_Spearman <- function(lambda1, lambda2, pi1, pi2, cop_par, copula){
   y1 <- 0
