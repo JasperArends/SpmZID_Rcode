@@ -106,9 +106,7 @@ spm_lw_bound_disc_Arends <- function(lambda1, lambda2, pi1, pi2) {
   
   if (1 - p1 - p2 <= 0) {
     rhomin <- -3 * (1 - p1) * (1 - p2)
-  } else {
-    p11 <- 1 - p1 - p2
-    
+  } else {    
     # Find s'
     s <- 0
     while (TRUE) {
