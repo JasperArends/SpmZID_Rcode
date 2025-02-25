@@ -6,10 +6,7 @@ library(dplyr)
 
 ######################################################################
 # ESTIMATOR rho_M
-# Based on Mesfiou, M. and Trufin, J. (2017). Bounds on multivariate
-# Kendall's tau and Spearman's rho for zero-inflated continuous
-# variables and their application to insurance. Methodology and
-# Computing in Applied Probability, 24, 1051-1059.
+# Based on Mesfioui and Trufin (2022).
 ######################################################################
 spm_Mesfioui <- function(A, B) {
   N <- length(A)
@@ -40,8 +37,7 @@ spm_Mesfioui <- function(A, B) {
 
 ######################################################################
 # ESTIMATOR rho_A
-# Based on Arends, J.R.M. and Perrone, E. (2025). Spearman's rho for
-# zero inflated data. In preparation.
+# Based on Arends and Perrone (2025).
 ######################################################################
 spm_Arends <- function(A, B) {
   
@@ -153,12 +149,8 @@ spm_Arends <- function(A, B) {
 
 ######################################################################
 # TRUE VALUE OF SPEARMAN'S RHO FOR DISCRETE DATA
-# Based on Safari-Katesari, H., Samadi, S.Y. and Zaroudi, S. (2020).
-# Modelling count data via copulas. Statistics, 54(6), 1329-1355.
-# doi.org/10.1080/02331888.2020.1867140.
-# Implementation by de Greef, N., van den Heuvel, E. and Zhuozhao, Z.
-# (2020). Correlation estimation for bivariate zero-inflated discrete
-# data. Master's thesis, Eindhoven University of Technology.
+# Based on Safari-Katesari et al. (2020), implemented by
+# de Greef et al. (2020).
 ######################################################################
 calculate_Safari_rho_Spearman <- function(lambda1, lambda2, pi1, pi2, cop_par, copula){
   y1 <- 0
