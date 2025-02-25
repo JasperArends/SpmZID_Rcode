@@ -7,8 +7,7 @@ source("copulas.R")
 
 ######################################################################
 # ZERO-INFLATED CONTINUOUS DISTRIBUTIONS
-# Based on Arends, J.R.M. and Perrone, E. (2025). Spearman's rho for
-# zero inflated data. In preparation.
+# Based on Arends and Perrone (2025).
 ######################################################################
 
 # True value
@@ -36,8 +35,7 @@ spm_bounds_cont_Arends_est <- function(A, B) {
 
 ######################################################################
 # APPROXIMATE BOUNDS FOR FULLY DISCRETE DATA
-# Based on Arends, J.R.M. and Perrone, E. (2025). Spearman's rho for
-# zero inflated data. In preparation.
+# Based on Arends and Perrone (2025).
 ######################################################################
 spm_bound_disc_Arends <- function(lambda1, lambda2, pi1, pi2) {
   return ( c(spm_up_bound_disc_Arends(lambda1, lambda2, pi1, pi2),
@@ -276,9 +274,7 @@ spm_lw_bound_disc_Arends_est <- function(A, B) {
 
 ######################################################################
 # ZERO-INFLATED CONTINUOUS DISTRIBUTIONS
-# Based on Mesfioui, M., Trufin, J., and Zuyderhoff, P. (2022). Bounds
-# on Spearman's rho when at least one random variable is discrete.
-# European Actuarial Journal, 12, 321-348.
+# Based on Mesfioui et al. (2022).
 ######################################################################
 spm_bounds_Mesfioui <- function(pi1, pi2) {
   p1 <- 1 - pi1
@@ -296,9 +292,6 @@ spm_bounds_Mesfioui_est <- function(A, B) {
 
 ######################################################################
 # TRUE BOUNDS FOR DISCRETE DATA
-# Based on Safari-Katesari, H., Samadi, S.Y. and Zaroudi, S. (2020).
-# Modelling count data via copulas. Statistics, 54(6), 1329-1355.
-# doi.org/10.1080/02331888.2020.1867140.
 ######################################################################
 spm_up_bound_Safari <- function(lambda1, lambda2, pi1, pi2)
   calculate_Safari_rho_Spearman(lambda1, lambda2, pi1, pi2, 0, copula_upper)
