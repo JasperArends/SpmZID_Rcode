@@ -10,6 +10,9 @@ The folder "Figures" contains the codes that were used to create the figures and
 **DEMO.R**
 Example of how the estimators can be used given a data set and how a simulation study can be initialised.
 
+**asymptotics.R**
+Analyse the asymptotic behaviour or our estimator using bootstrap and a Monte-Carlo simulation.
+
 **bounds.R**
 Functions for the computation and estimatation of bounds on zero-inflated continuous and discrete random variables.
 
