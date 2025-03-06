@@ -1,7 +1,6 @@
 ######################################################################
 # GENERATE SAMPLE FROM ZERO-INFLATED DISTRIBUTIONS
 ######################################################################
-library(copula)
 
 # Generate sample with Poisson margins with any copula
 gen_pois <- function(lambda1, lambda2, pi1, pi2, cop_par, copula, N) {
