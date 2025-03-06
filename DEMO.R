@@ -7,11 +7,12 @@
 # AND DEPENDENCIES
 ######################
 library(dplyr)
-library(Metrics) # MSE
+library(Metrics)
 
 source("copulas.R")
 source("gen_sample.R")
 source("main_estimators.R")
+source("main_sim.R")
 source("bounds.R")
 
 
