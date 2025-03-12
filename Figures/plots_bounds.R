@@ -147,12 +147,12 @@ for (N in c(50, 100, 500, 1000, 5000, 10000)) {
     # Estimate bounds
     df_bounds_est[nrow(df_bounds_est)+1,] <- 
       c(N,
-        spm_bounds_Arends(1-p1_est, 1-p2_est))
+        spm_bounds_cont_Arends(1-p1_est, 1-p2_est))
   }
 }
 
 # Boxplot for upper bound
-upper_true <- spm_bounds_Arends(1 - p1, 1 - p2)[1] # True value
+upper_true <- spm_bounds_cont_Arends(1 - p1, 1 - p2)[1] # True value
 df_bounds_est$N <- as.factor(df_bounds_est$N)
 
 ggplot(df_bounds_est) +
