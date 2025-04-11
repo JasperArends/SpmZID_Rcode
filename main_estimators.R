@@ -116,6 +116,24 @@ spm_Arends <- function(A, B) {
   return (rho_est)
 }
 
+######################################################################
+# ESTIMATOR rho_R
+# Based on Nasri and Rémillard (2024)
+######################################################################
+spm_Nasri <- function(A, B) {
+  n <- length(A) # Sample size
+  
+  Fx <- rank(A, ties.method="max")/n      # P[X <= x]
+  Fxm <- (rank(A, ties.method="min")-1)/n # P[X <  x]
+  Gy <- rank(B, ties.method="max")/n      # P[Y <= y]
+  Gym <- (rank(B, ties.method="min")-1)/n # P[Y <  y]
+  
+  K1 <- (Fx^2 - Fxm^2)/(Fx - Fxm)
+  K2 <- (Gy^2 - Gym^2)/(Gy - Gym)
+  
+  return( 3*sum((K1 - 1) * (K2 - 1))/n )
+}
+
 
 ######################################################################
 # ESTIMATOR rho_M
