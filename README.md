@@ -30,5 +30,6 @@ Simulation functions.
 
 ## References
 1. De Greef, N., van den Heuvel, E. and Zhuozhao, Z. (2020). Correlation estimation for bivariate zero-inflated discrete data. Master's thesis, Eindhoven University of Technology.
-2. Mesfioui, M. and Trufin, J. (2017). Bounds on multivariate Kendall's tau and Spearman's rho for zero-inflated continuous variables and their application to insurance. *Methodology and Computing in Applied Probability*, 24, 1051-1059.
-3. Safari-Katesari, H., Samadi, S.Y. and Zaroudi, S. (2020). Modelling count data via copulas. *Statistics*, 54(6), 1329-1355. doi: doi.org/10.1080/02331888.2020.1867140.
+2. Nasri, B.R. and Rémillard, B.N. (2024). Tests of independence and randomness for arbitrary data using copula-based covariances. *Journal of Multivariate Analysis*, 201, 105273.
+3. Mesfioui, M. and Trufin, J. (2017). Bounds on multivariate Kendall's tau and Spearman's rho for zero-inflated continuous variables and their application to insurance. *Methodology and Computing in Applied Probability*, 24, 1051-1059.
+4. Safari-Katesari, H., Samadi, S.Y. and Zaroudi, S. (2020). Modelling count data via copulas. *Statistics*, 54(6), 1329-1355. doi: doi.org/10.1080/02331888.2020.1867140.
