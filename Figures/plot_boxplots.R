@@ -1,3 +1,7 @@
+# Here, we compare the estimators from Nasri and Rémillard (2024) and
+# the proposed estimator for zero-inflated continuous and discrete
+# data, plotting the results as boxplots.
+
 ######################################################################
 # SIMULATION BOXPLOTS
 ######################################################################
@@ -41,7 +45,7 @@ df_plot <- reshape2::melt(df_sim[,2:4], id.var=c())
 ggplot(df_plot, aes(x=variable, y=value, fill=variable)) +
   geom_boxplot() +
   geom_hline(yintercept=rhoS_true, linetype=2) +
-  scale_fill_manual(breaks=c("cor", "Mesfioui", "Arends"),
+  scale_fill_manual(breaks=c("cor", "Nasri", "Arends"),
                     values=c("#fbb4ae","#fbb4ae", "#b3cde3")) +
   labs(x="", y=TeX("$\\rho_S$ estimate")) +
   theme_classic() +
@@ -53,7 +57,7 @@ ggplot(df_plot, aes(x=variable, y=value, fill=variable)) +
 
 # Initialise data frame with results
 df_sim <- data.frame(matrix(nrow=0, ncol=5))
-colnames(df_sim) <- c("N", "ID", "cor", "Mesfioui", "Arends")
+colnames(df_sim) <- c("N", "ID", "cor", "Nasri", "Arends")
 
 for (N in c(50, 100, 500, 1000, 5000, 10000)) {
   
