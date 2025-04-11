@@ -1,5 +1,5 @@
 # Spearman's rho for zero-inflated data
-Implementations based on Arends, J.R.M. and Perrone, E. (2025) *Spearman's rho for bi-variate zero-inflated data*. In preparation.
+Implementations based on Arends, J.R.M. and Perrone, E. (2025) *Sharp bounds on Spearman's rho for bi-variate zero-inflated data*. In preparation.
 
 ## Required libraries
 `dplyr` `Metrics` `boot` `copula` `ggplot2` `latex2exp`
